@@ -1,0 +1,1 @@
+concourspetanque.models.leagueRounds.SixTeams
