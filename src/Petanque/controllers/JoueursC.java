@@ -41,7 +41,7 @@ public class JoueursC {
         // Génère un nom aleatoire
         nameGenerator Name = new nameGenerator(6);
         for (int i = 0 ; i < GenerateurNbJoueur ; i++) {
-            Joueur newJoueur = new Joueur(Name.getName(), Name.getName(), numberGenerator(7,77));
+            Joueur newJoueur = new Joueur(Name.getName(), Name.getName(), numberGenerator(7,77), i);
             joueurs.add(newJoueur);
         }
         return joueurs;
