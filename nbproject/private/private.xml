@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/33611/Desktop/EPSI/DevEpsi/JAVA/ConcoursPetanque/src/concourspetanque/controllers/TeamsController.java</file>
-            <file>file:/C:/Users/33611/Desktop/EPSI/DevEpsi/JAVA/ConcoursPetanque/src/concourspetanque/controllers/tools/RandomGenerators.java</file>
-            <file>file:/C:/Users/33611/Desktop/EPSI/DevEpsi/JAVA/ConcoursPetanque/src/concourspetanque/controllers/PlayersController.java</file>
-            <file>file:/C:/Users/33611/Desktop/EPSI/DevEpsi/JAVA/ConcoursPetanque/src/concourspetanque/models/Team.java</file>
+            <file>file:/C:/Users/33611/Desktop/EPSI/TD/TDPetanque/src/Controllers/PartieC.java</file>
+            <file>file:/C:/Users/33611/Desktop/EPSI/TD/TDPetanque/src/Views/Concours.java</file>
+            <file>file:/C:/Users/33611/Desktop/EPSI/TD/TDPetanque/src/Controllers/JoueursC.java</file>
+            <file>file:/C:/Users/33611/Desktop/EPSI/TD/TDPetanque/src/Models/Equipe.java</file>
+            <file>file:/C:/Users/33611/Desktop/EPSI/TD/TDPetanque/src/Main/Petanque.java</file>
+            <file>file:/C:/Users/33611/Desktop/EPSI/TD/TDPetanque/src/Models/Partie.java</file>
+            <file>file:/C:/Users/33611/Desktop/EPSI/TD/TDPetanque/src/Controllers/EquipeC.java</file>
         </group>
     </open-files>
 </project-private>
