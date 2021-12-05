@@ -1,5 +1,5 @@
 package Petanque;
-import concourspetanque.views.League;
+import petanque.views.League;
 /**
  *
  * @author 33611

@@ -107,8 +107,8 @@ public class EquipeC {
             // Ajoute les matchs à la liste des parties joués pour chaque équipe
             int teamOneId = partie.getRouge().getId();
             int teamTwoId = partie.getBleue().getId();
-            this.equipes.get(teamOneId).getPlayedMatchs().add(partie);
-            this.equipes.get(teamTwoId).getPlayedMatchs().add(partie);
+            this.equipes.get(teamOneId).getPartieLancees().add(partie);
+            this.equipes.get(teamTwoId).getPartieLancees().add(partie);
             // Ajoute les points (positifs et négatifs) aux équipes
             int teamOnePoints = partie.getPointsRouge();
             int teamTwoPoints = partie.getPointsBleue();

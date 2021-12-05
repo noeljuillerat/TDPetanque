@@ -1,4 +1,4 @@
-package concourspetanque.views;
+package petanque.views;
 
 import petanque.controllers.PartieC;
 import petanque.controllers.JoueursC;
@@ -19,18 +19,18 @@ public class League {
         JoueursC playersController = new JoueursC();
         playersController.printPlayers();
 
-        TeamsController teamsController = new TeamsController(playersController.getPlayers());
+        EquipeC teamsController = new EquipeC(playersController.getJoueurs());
         teamsController.printTeams();
 
         // Jouer les matchs
-        PartieC matchsController = new PartieC(teamsController.getTeams());
-        matchsController.printMatchs(teamsController.getTeams().size());
+        PartieC matchsController = new PartieC(teamsController.getEquipes());
+        matchsController.printMatchs(teamsController.getEquipes().size());
 
         // Ajouter les matchs joués à chaque team
         teamsController.updateTeamsMatchs(matchsController.getMatchs());
 
         // Afficher les résultats
-        printFinalResults(teamsController.getTeams());
+        printFinalResults(teamsController.getEquipes());
     }
 
     private void printFinalResults(List<Equipe> teams) {
@@ -61,23 +61,23 @@ public class League {
             for(int i = 0 ; i < 3 ; i++) {
                 try {
                     // Affiche nom du joueur s'il existe
-                    Joueur player = team.getPlayers().get(i);
-                    System.out.printf("%-13s", player.getLastName());
+                    Joueur player = team.getJoueurs().get(i);
+                    System.out.printf("%-13s", player.getNom());
                 } catch (Exception e) {
                     // Réserve un espace vide sinon
                     System.out.printf("%-13s", "");
                 }
             }
             // Affiche Parties
-            for(Partie match : team.getPlayedMatchs()) {
-                System.out.printf("%-11s", match.getOpponent1score() + " / " + match.getOpponent2score());
+            for(Partie match : team.getPartieLancees()) {
+                System.out.printf("%-11s", match.getPointsRouge() + " / " + match.getPointsBleue());
             }
             // Affiche Points et Total
             System.out.printf("%6s", team.getPositivePoints());
             System.out.printf("%6s", team.getNegativePoints());
             System.out.printf("%8s", team.getPositivePoints() + team.getNegativePoints());
             // Affiche Victoire et position
-            System.out.printf("%11s", team.getVictories());
+            System.out.printf("%11s", team.getPartiesGagnees());
             System.out.printf("%10s", "PLACE");
             System.out.println("");
         }

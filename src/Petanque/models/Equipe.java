@@ -10,6 +10,8 @@ import java.util.List;
 public class Equipe {
     private List<Joueur> joueurs = new ArrayList<>();
     private List<Partie> partieLancees = new ArrayList<>();
+    private int positivePoints = 0;
+    private int negativePoints = 0;
     private int score = 0;
     private int partiesGagnees = 0;
     private int goalAverage = 0;
@@ -53,6 +55,22 @@ public class Equipe {
     }
     public void removePoints(int points) {
         this.score -= points;
+    }
+    
+    public int getPositivePoints() {
+        return positivePoints;
+    }
+
+    public void setPositivePoints(int positivePoints) {
+        this.positivePoints = positivePoints;
+    }
+
+    public int getNegativePoints() {
+        return negativePoints;
+    }
+
+    public void setNegativePoints(int negativePoints) {
+        this.negativePoints = negativePoints;
     }
 
     public List<Joueur> getJoueurs() {
